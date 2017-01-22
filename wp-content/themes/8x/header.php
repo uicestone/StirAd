@@ -55,23 +55,13 @@
                     <div class="container">
                         <div class="slider text-center">
 
+                            <?php foreach (get_posts(array('posts_per_page'=>-1, 'tag'=>'home-slider')) as $post): ?>
                             <div class="slider_item">
-                                <h1 class="text-large">8X SUPER THEME</h1>
-                                <h1>Beautiful profile pages for companies.</h1>
-                                <p class="lead">Aenean adipiscing purus in odio aliquet gravida. Pellentesque convallis metus at venenatis commodo. <br> Aliquam in molestie felis. Etiam in enim lorem.<p>
+                                <h1 class="text-large"><?=$post->post_title?></h1>
+                                <h1><?=$post->post_excerpt?></h1>
+                                <p class="lead"><?=$post->post_content?><p>
                             </div>
-
-                            <div class="slider_item">
-                                <h1 class="text-large">8X SUPER THEME</h1>
-                                <h1>Beautiful profile pages for companies.</h1>
-                                <p class="lead">Aenean adipiscing purus in odio aliquet gravida. Pellentesque convallis metus at venenatis commodo.<br> Aliquam in molestie felis. Etiam in enim lorem.<p>
-                            </div>
-
-                            <div class="slider_item">
-                                <h1 class="text-large">8X SUPER THEME</h1>
-                                <h1>Beautiful profile pages for companies.</h1>
-                                <p class="lead">Aenean adipiscing purus in odio aliquet gravida. Pellentesque convallis metus at venenatis commodo. <br> Aliquam in molestie felis. Etiam in enim lorem.<p>
-                            </div>
+                            <?php endforeach; ?>
 
                         </div><!-- Slider End -->
                     </div><!-- Container End -->
@@ -83,10 +73,10 @@
             <div class="tb container">
                 <div class="tb-cell text-center">
                     <div class="under_construction">
-                        <h1 class="text-large">404 OOPS!</h1>
-                        <p class="lead upper">The page you're looking for not found.</p>
+                        <h1 class="text-large">404 哎呀！</h1>
+                        <p class="lead upper">你访问的页面不见了哦</p>
                         <div class="col-lg-8 col-lg-offset-2 text-center pt_30">
-                            <a href="#" class="btn-mandy">Return to homepage</a>
+                            <a href="#" class="btn-mandy">返回首页</a>
                         </div>
                     </div>
                 </div>
@@ -97,8 +87,8 @@
             <div class="tb container">
                 <div class="tb-cell text-center">
                     <div class="under_construction">
-                        <h1 class="upper">This site is under construction</h1>
-                        <p class="lead upper">We're working on some improvement and we will come back in</p>
+                        <h1 class="upper">站点正在建设中</h1>
+                        <p class="lead upper">我们正在改善一些东西，稍后您就会看到</p>
                         <div class="col-lg-8 col-lg-offset-2 text-center">
                             <div id="countdown"></div>
                         </div>

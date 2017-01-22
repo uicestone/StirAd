@@ -539,9 +539,7 @@
         <div class="isotope">
 
             <div class="item">
-                <div class="featured_image wow fadeInDown"><a href="single.html"><img src="<?=get_stylesheet_directory_uri()?>/images/mehro.jpg"
-                                                                                      width="1920" height="1080"><span
-                                class="hover"></span></a></div>
+                <div class="featured_image wow fadeInDown"><a href="single.html"><img src="<?=get_stylesheet_directory_uri()?>/images/mehro.jpg" width="1920" height="1080"><span class="hover"></span></a></div>
                 <div class="post_text wow fadeInLeft"><a href="single.html" target="_blank"><h3 class="upper">Blog
                             Title</h3></a>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
