@@ -49,3 +49,10 @@ class Kinder_Walker_Nav_Menu extends Walker_Nav_Menu {
 		$output = str_replace('sub-menu', 'sub-menu dropdown', $output);
 	}
 }
+
+add_action('wp', function() {
+    $under_construction_page = get_posts(array('name'=>'under-construction', 'post_type'=>'page'));
+    if($under_construction_page && !is_page('under-construction') && !is_admin() && !is_admin_bar_showing()) {
+        header('Location: ' . get_permalink($under_construction_page[0]->ID)); exit;
+    }
+});

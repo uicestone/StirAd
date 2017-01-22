@@ -186,9 +186,9 @@ $(window).load(function(){
 
 
 $(function () {
-	var endTime = "22 Jul 2016 23:59:00";
+	var endTime = $('#construction-end-date').text();
 	var austDay = new Date(endTime);
-	$('#countdown').countdown({until: austDay, format:'ODHMS',padZeroes: true, onExpiry: liftOff,});
+	$('#countdown').countdown({until: austDay, format:'ODHMS',padZeroes: true, onExpiry: liftOff, labels: ['年', '个月', '星期', '天', '小时', '分钟', '秒']});
 	$('#year').text(austDay.getFullYear());
 });
 
