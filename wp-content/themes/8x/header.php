@@ -42,29 +42,7 @@
                     </button>
                     <a class="navbar-brand" href="/"><img src="<?=get_stylesheet_directory_uri()?>/images/stir.png" width="150"></a>
                 </div>
-                <div class="collapse navbar-collapse">
-                    <ul class="nav navbar-nav">
-                        <li><a href="/#home">Home</a></li>
-                        <li><a href="/#about">About</a></li>
-                        <li><a href="/#portfolio">Portfolio</a></li>
-                        <li><a href="/#team">Team</a></li>
-                        <li><a href="/#price">Price</a></li>
-                        <li><a href="#">Blog</a>
-                            <ul class="dropdown">
-                                <li><a href="/#blog" class="no-scroll">Blog Masonry</a>
-                                <li><a href="blog.html" class="no-scroll">Blog</a></li>
-                                <li><a href="single.html" class="no-scroll">Blog Single</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="/#testimonials">Testimonials</a></li>
-                        <li><a href="/#contact">Contact</a></li>
-                        <li><a href="#" class="no-scroll">Pages</a>
-                            <ul class="dropdown">
-                                <li><a href="404.html" class="no-scroll">404</a></li>
-                                <li><a href="under_construction.html" class="no-scroll">Under Consruction</a></li>
-                            </ul></li>
-                    </ul>
-                </div><!--/.nav-collapse -->
+                <?php wp_nav_menu(['theme_location'=>'primary', 'container_class'=>'collapse navbar-collapse', 'menu_class'=>'nav navbar-nav', 'walker'=>new Kinder_Walker_Nav_Menu()]); ?>
             </div>
         </div>
 

@@ -31,7 +31,7 @@ add_filter('nav_menu_link_attributes', function($attrs, $item) {
 	$attrs['class'][] = 'menu-link';
 	
 	if(in_array('current-menu-item', $item->classes) || in_array('current-page-ancestor', $item->classes)) {
-		$attrs['class'][] = 'set_active';
+		$attrs['class'][] = 'active';
 	}
 	
 	$attrs['class'] = implode(' ', $attrs['class']);
@@ -42,20 +42,10 @@ add_filter('nav_menu_link_attributes', function($attrs, $item) {
 	
 }, 10, 2);
 
-add_filter('nav_menu_css_class', function($classes, $item) {
-	
-	if(in_array('menu-item-has-children', $classes)) {
-		$classes[] = 'has-dropdown';
-	}
-	
-	return $classes;
-	
-}, 10, 2);
-
 class Kinder_Walker_Nav_Menu extends Walker_Nav_Menu {
 	public function start_lvl(&$output, $depth = 0, $args = array())
 	{
 		parent::start_lvl($output, $depth, $args);
-		$output = str_replace('sub-menu', 'sub-menu nav-dropdown menu', $output);
+		$output = str_replace('sub-menu', 'sub-menu dropdown', $output);
 	}
 }
