@@ -249,12 +249,12 @@ ul.standard:after {bottom:-20px;left:0; background:rgba(255,255,255,.2);border-l
 	.icons .text-left, .icons .text-right { text-align:center !important;}
 }
 
-.blog {padding:20px 0px !important;}
-.blog .post_text { padding:10px 15px; border:solid 1px #ddd; margin-bottom:25px;}
-.blog .post_text h2 { padding-top:0px !important; margin-top:0 !important;}
-.featured_image { position:relative; overflow:hidden;}
-.blog a h3 { color:#444;}
-.blog a:hover { text-decoration:none !important;}
+/*.blog {padding:20px 0px !important;}*/
+/*.blog .post_text { padding:10px 15px; border:solid 1px #ddd; margin-bottom:25px;}*/
+/*.blog .post_text h2 { padding-top:0px !important; margin-top:0 !important;}*/
+/*.featured_image { position:relative; overflow:hidden;}*/
+/*.blog a h3 { color:#444;}*/
+/*.blog a:hover { text-decoration:none !important;}*/
 .featured_image { position:relative; overflow:hidden;}
 .featured_image a .hover { display:block;content:""; background:url(images/plus.png) no-repeat center center rgba(240,93,118,0.8);opacity:0;position:absolute;top:0;left:0; height:100%; width:0; -webkit-transition: all .5s ease;
 	-moz-transition: all .5s ease;

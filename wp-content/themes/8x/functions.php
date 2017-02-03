@@ -3,6 +3,7 @@
 add_action('wp_enqueue_scripts', function() {
     wp_enqueue_style('bootstrap', get_stylesheet_directory_uri() . '/css/bootstrap.css');
     wp_enqueue_style('style', get_stylesheet_directory_uri() . '/style.css');
+    wp_enqueue_style('theme', get_stylesheet_directory_uri() . '/css/theme.css');
     wp_enqueue_script('modernizr', get_stylesheet_directory_uri() . '/js/modernizr.js');
     wp_enqueue_script('jquery.min', get_stylesheet_directory_uri() . '/js/jquery.min.js', array(), false, true);
     wp_enqueue_script('bootstrap.min', get_stylesheet_directory_uri() . '/js/bootstrap.min.js', array(), false, true);

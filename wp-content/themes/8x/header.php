@@ -22,7 +22,7 @@
     <![endif]-->
 </head>
 
-<body>
+<body <?=body_class()?>>
 
 <!-- Preloader -->
 <div id="preloader">
