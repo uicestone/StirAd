@@ -42,13 +42,14 @@
                     </button>
                     <a class="navbar-brand" href="/"><img src="<?=get_stylesheet_directory_uri()?>/images/stir.png" width="150"></a>
                 </div>
+                <?php if(!is_404() && !is_page('under-construction')): ?>
                 <?php wp_nav_menu(['theme_location'=>'primary', 'container_class'=>'collapse navbar-collapse', 'menu_class'=>'nav navbar-nav', 'walker'=>new Kinder_Walker_Nav_Menu()]); ?>
+                <?php endif; ?>
             </div>
         </div>
 
-        <img src="<?=get_stylesheet_directory_uri()?>/images/mountain_opt.jpg" class="bg_img" width="2000" height="1337">
-
         <?php if(is_home()): ?>
+        <img src="<?=get_stylesheet_directory_uri()?>/images/mountain_opt.jpg" class="bg_img" width="2000" height="800">
         <div class="slider_wrapper">
             <div class="tb container">
                 <div class="tb-cell text-center">
@@ -69,6 +70,7 @@
             </div> <!-- Tb Container End -->
         </div> <!-- Slider Wrapper End -->
         <?php elseif(is_404()): ?>
+        <img src="<?=get_stylesheet_directory_uri()?>/images/mountain_opt.jpg" class="bg_img" width="2000" height="800">
         <div class="slider_wrapper">
             <div class="tb container">
                 <div class="tb-cell text-center">
@@ -76,13 +78,14 @@
                         <h1 class="text-large">404 哎呀！</h1>
                         <p class="lead upper">你访问的页面不见了哦</p>
                         <div class="col-lg-8 col-lg-offset-2 text-center pt_30">
-                            <a href="#" class="btn-mandy">返回首页</a>
+                            <a href="/" class="btn-mandy">返回首页</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <?php elseif(is_page('under-construction')): ?>
+        <img src="<?=get_stylesheet_directory_uri()?>/images/mountain_opt.jpg" class="bg_img" width="2000" height="800">
         <div class="slider_wrapper">
             <div class="tb container">
                 <div class="tb-cell text-center">
@@ -96,5 +99,7 @@
                 </div>
             </div>
         </div>
+        <?php else: ?>
+        <img src="<?=get_stylesheet_directory_uri()?>/images/mountain_header.jpg" class="bg_img" width="2000" height="554">
         <?php endif; ?>
     </header> <!-- Header End -->
