@@ -3,19 +3,19 @@
 <div class="container-fluid" id="about">
     <div class="container ptb_50 feature_icons">
         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-center wow flipInY"><i class="icon-box"></i>
-            <p><strong class="upper">CREATIVE DESIGN</strong></p>
-            <p>Lorem Ipsum has been the industry's standard dummy.</p></div>
+            <p><strong class="upper">创意的设计</strong></p>
+            <p>使用创意的方式，在各种平面，表达您的想法</p></div>
         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-center wow flipInY"><i
                     class="icon-settings-streamline-2"></i>
-            <p><strong class="upper">drag & drop page builder</strong></p>
-            <p>Lorem Ipsum has been the industry's standard dummy.</p></div>
+            <p><strong class="upper">微信深度结合</strong></p>
+            <p>使用定制开发的公众号和小程序，将您的流量入口呈现到随时随地</p></div>
         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-center wow flipInY"><i class="icon-coffee-streamline"></i>
-            <p><strong class="upper">Multipurpose</strong></p>
-            <p>Lorem Ipsum has been the industry's standard dummy.</p></div>
+            <p><strong class="upper">企业内部管理</strong></p>
+            <p>快速迭代开发的定制系统，使您的企业和合作伙伴办公效率如虎添翼</p></div>
         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-center wow flipInY"><i
                     class="icon-arrow-streamline-target"></i>
-            <p><strong class="upper">SEO ready</strong></p>
-            <p>Lorem Ipsum has been the industry's standard dummy.</p></div>
+            <p><strong class="upper">活泼的H5页面</strong></p>
+            <p>灵活的HTML5动效，炫酷的展现方式，令您的产品和服务脱引而出</p></div>
     </div>
 </div>
 
@@ -23,10 +23,9 @@
 <div class="container-fluid">
     <div class="gradient_overlay">
         <div class="container pt_40 circle_bg text-white text-center">
-            <h1 class="text-semi-large wow slideInLeft">Are you ready for New Exprerience?</h1>
-            <p class="lead ptb_10 wow fadeInDown">Aenean adipiscing purus in odio aliquet gravida. Pellentesque
-                convallis metus at venenatis commodo. Aliquam in molestie felis. Etiam in enim lorem.</p><br>
-            <a href="#" target="_blank" class="btn-light wow fadeInDown">Purchase Now</a>
+            <h1 class="text-semi-large wow slideInLeft">准备好迎接全新的特性了吗？</h1>
+            <p class="lead ptb_10 wow fadeInDown">新技术，新解决方案，配合您的业务环境，带来无限可能</p><br>
+            <a href="#" target="_blank" class="btn-light wow fadeInDown">立即咨询</a>
             <img src="<?=get_stylesheet_directory_uri()?>/images/3screens.png" width="1160" height="483"></div>
     </div>
 </div>
@@ -118,8 +117,8 @@
 <div class="container-fluid hill">
     <div class="gradient_overlay">
         <div class="container text-white text-center ptb_80">
-            <h1 class="text-semi-large  wow slideInRight">"It is not the Mountain we Conquer but Ourselves"</h1><br><br>
-            <a href="#" target="_blank" class="btn-mandy wow fadeInUp">Purchase Now</a></div>
+            <h1 class="text-semi-large  wow slideInRight">"天生我材必有用，千金散去还复来"</h1><br><br>
+            <a href="#" target="_blank" class="btn-mandy wow fadeInUp">立即预约咨询</a></div>
     </div>
 </div>
 
@@ -127,10 +126,8 @@
 
 <div class="container-fluid" id="portfolio">
     <div class="container text-center pt_50">
-        <h1 class="text-semi-large wow fadeInLeft">Our Recent Work</h1>
-        <p class="lead wow fadeInUp">Aenean adipiscing purus in odio aliquet gravida. Pellentesque convallis metus at
-            venenatis commodo. Aliquam in molestie felis. Etiam in enim lorem.
-        <p>
+        <h1 class="text-semi-large wow fadeInLeft">近期项目</h1>
+        <p class="lead wow fadeInUp"><p>
     </div>
 </div>
 
@@ -139,6 +136,7 @@
     <div class="container pt_50">
         <div class="project_slider">
 
+            <?php foreach (get_posts(['posts_per_page'=>6, 'tag'=>'work']) as $post): ?>
             <div class="project wow fadeInUp col-sm-6 col-md-4">
                 <a href="#" class="block">
                     <div class="project_thumb">
@@ -146,98 +144,13 @@
                         <div class="project_overlay"></div>
                     </div>
                     <div class="project_text">
-                        <h4 class="ptb_20">WEBSITE PROJECT 01</h4>
-                        <p>Aenean adipiscing purus in odio aliquet gravida. Pellentesque convallis metus at venenatis
-                            commodo. Aliquam in molestie felis. Etiam in enim lorem. Aenean adipiscing purus in odio
-                            aliquet gravida. Pellentesque convallis metus at venenatis commodo. Aliquam in molestie
-                            felis. Etiam in enim lorem.</p><br>
-                        <strong class="arrow">Launch Project</strong>
+                        <h4 class="ptb_20"><?=$post->post_title?></h4>
+                        <p><?=$post->post_excerpt?></p><br>
+                        <strong class="arrow">查看项目</strong>
                     </div>
-                </a></div>
-
-            <div class="project wow fadeInUp col-sm-6 col-md-4">
-                <a href="#" class="block">
-                    <div class="project_thumb">
-                        <img src="<?=get_stylesheet_directory_uri()?>/images/picjumbo.jpg" width="380" height="253">
-                        <div class="project_overlay"></div>
-                    </div>
-                    <div class="project_text">
-                        <h4 class="ptb_20">WEBSITE PROJECT 02</h4>
-                        <p>Aenean adipiscing purus in odio aliquet gravida. Pellentesque convallis metus at venenatis
-                            commodo. Aliquam in molestie felis. Etiam in enim lorem. Aenean adipiscing purus in odio
-                            aliquet gravida. Pellentesque convallis metus at venenatis commodo. Aliquam in molestie
-                            felis. Etiam in enim lorem.</p><br>
-                        <strong class="arrow">Launch Project</strong>
-                    </div>
-                </a></div>
-
-
-            <div class="project wow fadeInUp col-sm-6 col-md-4">
-                <a href="#" class="block">
-                    <div class="project_thumb">
-                        <img src="<?=get_stylesheet_directory_uri()?>/images/picjumbo.com_IMG_4563.jpg" width="380" height="253">
-                        <div class="project_overlay"></div>
-                    </div>
-                    <div class="project_text">
-                        <h4 class="ptb_20">WEBSITE PROJECT 03</h4>
-                        <p>Aenean adipiscing purus in odio aliquet gravida. Pellentesque convallis metus at venenatis
-                            commodo. Aliquam in molestie felis. Etiam in enim lorem. Aenean adipiscing purus in odio
-                            aliquet gravida. Pellentesque convallis metus at venenatis commodo. Aliquam in molestie
-                            felis. Etiam in enim lorem.</p><br>
-                        <strong class="arrow">Launch Project</strong>
-                    </div>
-                </a></div>
-
-
-            <div class="project wow fadeInUp col-sm-6 col-md-4">
-                <a href="#" class="block">
-                    <div class="project_thumb">
-                        <img src="<?=get_stylesheet_directory_uri()?>/images/picjumbo.com_IMG_5540.jpg" width="380" height="253">
-                        <div class="project_overlay"></div>
-                    </div>
-                    <div class="project_text">
-                        <h4 class="ptb_20">WEBSITE PROJECT 04</h4>
-                        <p>Aenean adipiscing purus in odio aliquet gravida. Pellentesque convallis metus at venenatis
-                            commodo. Aliquam in molestie felis. Etiam in enim lorem. Aenean adipiscing purus in odio
-                            aliquet gravida. Pellentesque convallis metus at venenatis commodo. Aliquam in molestie
-                            felis. Etiam in enim lorem.</p><br>
-                        <strong class="arrow">Launch Project</strong>
-                    </div>
-                </a></div>
-
-
-            <div class="project wow fadeInUp col-sm-6 col-md-4">
-                <a href="#" class="block">
-                    <div class="project_thumb">
-                        <img src="<?=get_stylesheet_directory_uri()?>/images/picjumbo.com_IMG_5530.jpg" width="380" height="253">
-                        <div class="project_overlay"></div>
-                    </div>
-                    <div class="project_text">
-                        <h4 class="ptb_20">WEBSITE PROJECT 01</h4>
-                        <p>Aenean adipiscing purus in odio aliquet gravida. Pellentesque convallis metus at venenatis
-                            commodo. Aliquam in molestie felis. Etiam in enim lorem. Aenean adipiscing purus in odio
-                            aliquet gravida. Pellentesque convallis metus at venenatis commodo. Aliquam in molestie
-                            felis. Etiam in enim lorem.</p><br>
-                        <strong class="arrow">Launch Project</strong>
-                    </div>
-                </a></div>
-
-            <div class="project wow fadeInUp col-sm-6 col-md-4">
-                <a href="#" class="block">
-                    <div class="project_thumb">
-                        <img src="<?=get_stylesheet_directory_uri()?>/images/picjumbo.jpg" width="380" height="253">
-                        <div class="project_overlay"></div>
-                    </div>
-                    <div class="project_text">
-                        <h4 class="ptb_20">WEBSITE PROJECT 02</h4>
-                        <p>Aenean adipiscing purus in odio aliquet gravida. Pellentesque convallis metus at venenatis
-                            commodo. Aliquam in molestie felis. Etiam in enim lorem. Aenean adipiscing purus in odio
-                            aliquet gravida. Pellentesque convallis metus at venenatis commodo. Aliquam in molestie
-                            felis. Etiam in enim lorem.</p><br>
-                        <strong class="arrow">Launch Project</strong>
-                    </div>
-                </a></div>
-
+                </a>
+            </div>
+            <?php endforeach; ?>
         </div>
 
     </div>
@@ -249,9 +162,8 @@
 
 <div class="container-fluid gray-bg" id="team">
     <div class="container text-center ptb_40">
-        <h1 class="text-semi-large wow slideInLeft">Meet our team</h1>
-        <p class="lead wow fadeInUp">Aenean adipiscing purus in odio aliquet gravida. Pellentesque convallis metus at
-            venenatis commodo. Aliquam in molestie felis. Etiam in enim lorem.</p>
+        <h1 class="text-semi-large wow slideInLeft">约见我们的团队</h1>
+        <p class="lead wow fadeInUp">亲口说出您的想法，亲身感受我们的服务</p>
     </div>
 </div>
 
@@ -452,7 +364,7 @@
 <div class="container-fluid" id="price">
     <div class="gradient_overlay">
         <div class="container text-white text-center pt_40 pb_20">
-            <h1 class="text-semi-large wow bounceInRight animated">Pricing Tables</h1>
+            <h1 class="text-semi-large wow bounceInRight animated">报价</h1>
             <p class="lead wow fadeInUp">Aenean adipiscing purus in odio aliquet gravida. Pellentesque convallis metus
                 at venenatis commodo. Aliquam in molestie felis. Etiam in enim lorem.</p><br>
         </div>
@@ -529,7 +441,7 @@
 
 <div class="container-fluid blog" id="blog">
     <div class="container text-center ptb_30">
-        <h1 class="text-semi-large wow slideInLeft">From the Blog</h1>
+        <h1 class="text-semi-large wow slideInLeft">博客</h1>
         <p class="lead wow fadeInUp">Aenean adipiscing purus in odio aliquet gravida. Pellentesque convallis metus at
             venenatis commodo. Aliquam in molestie felis. Etiam in enim lorem.</p>
         <p>
@@ -604,7 +516,7 @@
 <div class="container-fluid testimonials_wrapper" id="testimonials">
     <div class="gradient_overlay">
         <div class="container ptb_50 text-white text-center">
-            <h1 class="text-semi-large wow slideInLeft">What our clients say about us</h1>
+            <h1 class="text-semi-large wow slideInLeft">客户评价</h1>
             <p class="lead wow fadeInUp">Aenean adipiscing purus in odio aliquet gravida. Pellentesque convallis metus
                 at venenatis commodo. Aliquam in molestie felis. Etiam in enim lorem.</p><br>
         </div>
@@ -663,7 +575,7 @@
 <!-- Testimonial Section End -->
 
 <div class="container-fluid" id="contact">
-    <div class="container ptb_50 text-center"><h1 class="text-semi-large">Contact Us</h1>
+    <div class="container ptb_50 text-center"><h1 class="text-semi-large">联系我们</h1>
         <hr class="half"/>
     </div>
     <div class="container pb_80">
