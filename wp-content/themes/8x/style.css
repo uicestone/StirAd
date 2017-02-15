@@ -73,7 +73,7 @@ header:before, .gradient_overlay:before {
 .navbar .container { position:relative; z-index:9999999999 !important;}
 .text-white, .text-white h1, .text-white h2, .text-white strong, .text-white b {color:#fff;}
 .text-large {font-size:72px; text-transform:uppercase; font-weight:700;}
-.text-semi-large {font-size:60px; font-weight:600;}
+.text-semi-large {font-size:60px; font-weight:0;}
 .slider_wrapper {width:100% !important; height:80% !important; display:block;position:absolute;top:10%;left:0;}
 
 .slider { display:inline-block; vertical-align:middle !important;}

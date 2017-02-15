@@ -40,7 +40,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="/"><img src="<?=get_stylesheet_directory_uri()?>/images/stir.png" width="150"></a>
+                    <a class="navbar-brand" href="/"><img src="<?=get_stylesheet_directory_uri()?>/images/stir1.svg" width="150"></a>
                 </div>
                 <?php if(!is_404() && !is_page('under-construction')): ?>
                 <?php wp_nav_menu(['theme_location'=>'primary', 'container_class'=>'collapse navbar-collapse', 'menu_class'=>'nav navbar-nav', 'walker'=>new Kinder_Walker_Nav_Menu()]); ?>

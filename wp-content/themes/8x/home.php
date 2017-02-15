@@ -38,27 +38,27 @@
 
         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 text-right pr_25 wow fadeInLeft">
             <div class="valign">
-                <div><strong>FULLY RESPONSIVE DESIGN</strong><br>
-                    Lorem ipsum dolor sit amet
+                <div><strong>移动端设计</strong><br>
+                    网页自适应，自动适应不同设备
                 </div>
                 <div class="icon-wrapper"><i class="icon icon-iphone-streamline"></i></div>
                 <div>
                 </div>
             </div>
-            <p>Aenean adipiscing purus in odio aliquet gravida. Pellentesque convallis metus at venenatis commodo.</p>
+            <!-- <p>Aenean adipiscing purus in odio aliquet gravida. Pellentesque convallis metus at venenatis commodo.</p> -->
         </div>
 
         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 text-left pl_25 wow fadeInRight">
             <div class="valign">
                 <div class="icon-wrapper"><i class="icon icon-painting-pallet-streamline"></i></div>
-                <div><strong>UNLIMITED COLOR</strong><br>
-                    Lorem ipsum dolor sit amet
+                <div><strong>平面设计</strong><br>
+                    海报、画册、插画、UI设计、动画视频
                 </div>
                 <div>
                 </div>
             </div>
-            <p>Aenean adipiscing purus in odio aliquet gravida. Pellentesque convallis metus at venenatis commodo.</p>
-        </div>
+            <!-- <p>Aenean adipiscing purus in odio aliquet gravida. Pellentesque convallis metus at venenatis commodo.</p> -->
+        </div> 
 
         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 text-right pr_25 wow fadeInLeft">
             <div class="valign">
@@ -69,7 +69,7 @@
                 <div>
                 </div>
             </div>
-            <p>Aenean adipiscing purus in odio aliquet gravida. Pellentesque convallis metus at venenatis commodo.</p>
+            <!-- <p>Aenean adipiscing purus in odio aliquet gravida. Pellentesque convallis metus at venenatis commodo.</p> -->
         </div>
 
         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 text-left pl_25 wow fadeInRight">
@@ -81,20 +81,20 @@
                 <div>
                 </div>
             </div>
-            <p>Aenean adipiscing purus in odio aliquet gravida. Pellentesque convallis metus at venenatis commodo.</p>
+            <!-- <p>Aenean adipiscing purus in odio aliquet gravida. Pellentesque convallis metus at venenatis commodo.</p> -->
         </div>
 
 
         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 text-right pr_25 wow fadeInLeft">
             <div class="valign">
-                <div><strong>FREE UPDATE & 5 STAR SUPPORT</strong><br>
-                    Lorem ipsum dolor sit amet
+                <div><strong>项目咨询</strong><br>
+                    提供微信、应用、系统开发咨询服务
                 </div>
                 <div class="icon-wrapper"><i class="icon icon-speech-streamline-talk-user"></i></div>
                 <div>
                 </div>
             </div>
-            <p>Aenean adipiscing purus in odio aliquet gravida. Pellentesque convallis metus at venenatis commodo.</p>
+            <!-- <p>Aenean adipiscing purus in odio aliquet gravida. Pellentesque convallis metus at venenatis commodo.</p> -->
         </div>
 
         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 text-left pl_25 wow fadeInRight">
@@ -106,7 +106,7 @@
                 <div>
                 </div>
             </div>
-            <p>Aenean adipiscing purus in odio aliquet gravida. Pellentesque convallis metus at venenatis commodo.</p>
+            <!-- <p>Aenean adipiscing purus in odio aliquet gravida. Pellentesque convallis metus at venenatis commodo.</p> -->
         </div>
 
 
@@ -127,7 +127,7 @@
 <div class="container-fluid" id="portfolio">
     <div class="container text-center pt_50">
         <h1 class="text-semi-large wow fadeInLeft">近期项目</h1>
-        <p class="lead wow fadeInUp"><p>
+        <p class="lead wow fadeInUp">哈哈哈哈<p>
     </div>
 </div>
 
@@ -160,7 +160,7 @@
 <!-- Portfolio Section End -->
 
 
-<div class="container-fluid gray-bg" id="team">
+<!-- <div class="container-fluid gray-bg" id="team">
     <div class="container text-center ptb_40">
         <h1 class="text-semi-large wow slideInLeft">约见我们的团队</h1>
         <p class="lead wow fadeInUp">亲口说出您的想法，亲身感受我们的服务</p>
@@ -358,10 +358,12 @@
             </div>
         </div>
     </div>
-</div><!-- Team Section End -->
+</div> -->
+
+<!-- Team Section End -->
 
 
-<div class="container-fluid" id="price">
+<!-- <div class="container-fluid" id="price">
     <div class="gradient_overlay">
         <div class="container text-white text-center pt_40 pb_20">
             <h1 class="text-semi-large wow bounceInRight animated">报价</h1>
@@ -434,7 +436,7 @@
         </div>
 
     </div>
-</div>
+</div> -->
 
 <!-- Price Section End -->
 
@@ -580,23 +582,23 @@
     </div>
     <div class="container pb_80">
         <div class="col-lg-3 m-center wow fadeInLeft">
-            <h4 class="upper">Contact Info</h4><br>
-            <p>16 East Wood Avenue, New York, NY<br>
-                778569, USA</p>
+            <h4 class="upper">联系方式</h4><br>
+            <!-- <p>16 East Wood Avenue, New York, NY<br>
+                778569, USA</p> -->
             <p>
-                <strong>PHONE:&nbsp;</strong><a target="_blank" href="tel:+444123456789">+444 123456789</a><br>
-                <strong>FAX:</strong> +444 123456789<br>
-                <strong>EMAIL:</strong> <a href="mailto:hello@domain.com">hello@domain.com</a><br>
-                <strong>WEB:</strong> <a href="domain.html">www.domain.com</a></p>
+                <strong>PHONE:&nbsp;</strong><a target="_blank" href="tel:+444123456789">15901851701</a><br>
+                <!-- <strong>FAX:</strong> +444 123456789<br> -->
+                <strong>EMAIL:</strong> <a href="mailto:hello@domain.com">natt.ni@stirad.com</a><br>
+                <strong>WEB:</strong> <a href="domain.html">www.stirad.com</a></p>
         </div>
         <div class="col-lg-9 wow fadeInRight">
             <form class="form" action="http://demo.themexlab.com/8x/parallax/sendemail.php" method="post">
                 <p class="lead show-on-success">Thanks for the mail, We will contact you shortly.</p>
-                <input type="text" name="name" class="col-lg-4" placeholder="name"/>
-                <input type="text" name="email" class="col-lg-4" placeholder="email"/>
-                <input type="text" name="subject" class="col-lg-4" placeholder="subject"/><br>
-                <textarea name="message" placeholder="Message" rows="10"></textarea><br>
-                <input type="submit" class="m-center" name="submit" value="Submit Now"/>
+                <input type="text" name="name" class="col-lg-4" placeholder="姓名"/>
+                <input type="text" name="email" class="col-lg-4" placeholder="邮箱"/>
+                <input type="text" name="subject" class="col-lg-4" placeholder="手机"/><br>
+                <textarea name="message" placeholder="内容" rows="10"></textarea><br>
+                <input type="submit" class="m-center" name="submit" value="提交"/>
             </form>
         </div>
     </div>
