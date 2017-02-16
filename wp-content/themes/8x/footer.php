@@ -11,7 +11,7 @@
                 </div>
             </div>
 
-            <div class="col-lg-6 left m-center  wow fadeInLeft">© 2014 - All Rights Reserved <a href="#" target="_blank">8X</a></div>
+            <div class="col-lg-6 left m-center  wow fadeInLeft">© 2013-<?=date('Y')?> - All Rights Reserved <a href="#" target="_blank">Stir Ad.</a></div>
 
         </div>
     </footer>
