@@ -127,7 +127,7 @@
 <div class="container-fluid" id="portfolio">
     <div class="container text-center pt_50">
         <h1 class="text-semi-large wow fadeInLeft">近期项目</h1>
-        <p class="lead wow fadeInUp">哈哈哈哈<p>
+        <p class="lead wow fadeInUp">不积跬步，无以至千里<p>
     </div>
 </div>
 
@@ -136,11 +136,11 @@
     <div class="container pt_50">
         <div class="project_slider">
 
-            <?php foreach (get_posts(['posts_per_page'=>6, 'tag'=>'work']) as $post): ?>
+            <?php foreach (get_posts(['posts_per_page'=>6, 'category_name'=>'work']) as $post): ?>
             <div class="project wow fadeInUp col-sm-6 col-md-4">
                 <a href="#" class="block">
                     <div class="project_thumb">
-                        <img src="<?=get_stylesheet_directory_uri()?>/images/picjumbo.com_IMG_5530.jpg" width="380" height="253">
+                        <?=get_the_post_thumbnail($post, [380, 253])?>
                         <div class="project_overlay"></div>
                     </div>
                     <div class="project_text">
@@ -444,70 +444,34 @@
 <div class="container-fluid blog" id="blog">
     <div class="container text-center ptb_30">
         <h1 class="text-semi-large wow slideInLeft">博客</h1>
-        <p class="lead wow fadeInUp">Aenean adipiscing purus in odio aliquet gravida. Pellentesque convallis metus at
-            venenatis commodo. Aliquam in molestie felis. Etiam in enim lorem.</p>
+        <p class="lead wow fadeInUp">滴水穿石</p>
         <p>
         </p></div>
     <div class="container">
 
         <div class="isotope">
 
+            <?php foreach(get_posts(['category_name'=>'blog']) as $post): ?>
             <div class="item">
-                <div class="featured_image wow fadeInDown"><a href="single.html"><img src="<?=get_stylesheet_directory_uri()?>/images/mehro.jpg" width="1920" height="1080"><span class="hover"></span></a></div>
-                <div class="post_text wow fadeInLeft"><a href="single.html" target="_blank"><h3 class="upper">Blog
-                            Title</h3></a>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                        of type and scrambled it to make a type specimen book.</p>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                        of type and scrambled it to make a type specimen book.</p><a href="single.html" target="_blank">Read
-                        More</a></div>
+                <div class="featured_image wow fadeInDown">
+                    <a href="<?=get_the_permalink($post)?>">
+                        <?=get_the_post_thumbnail($post, [1920, 1080])?>
+                        <span class="hover"></span>
+                    </a>
+                </div>
+                <div class="post_text wow fadeInLeft">
+                    <a href="<?=get_the_permalink($post)?>" target="_blank"><h3 class="upper"><?=get_the_title($post)?></h3></a>
+                    <?=get_the_excerpt($post)?>
+                    <a href="<?=get_the_permalink($post)?>" target="_blank">全文</a></div>
             </div>
-            <div class="item">
-                <div class="featured_image wow fadeInDown"><a href="single.html"><img src="<?=get_stylesheet_directory_uri()?>/images/mehro.jpg"
-                                                                                      width="1920" height="1080"><span
-                                class="hover"></span></a></div>
-                <div class="post_text wow fadeInLeft"><a href="single.html" target="_blank"><h3 class="upper">Blog
-                            Title</h3></a>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                        of type and scrambled it to make a type specimen book.</p><a href="single.html" target="_blank">Read
-                        More</a></div>
-            </div>
-
-            <div class="item">
-                <div class="featured_image wow fadeInDown"><a href="single.html"><img src="<?=get_stylesheet_directory_uri()?>/images/mehro.jpg"
-                                                                                      width="1920" height="1080"><span
-                                class="hover"></span></a></div>
-                <div class="post_text wow fadeInLeft"><a href="single.html" target="_blank"><h3 class="upper">Blog
-                            Title</h3></a>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                        of type and scrambled it to make a type specimen book.</p>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                        of type and scrambled it to make a type specimen book.</p><a href="single.html" target="_blank">Read
-                        More</a></div>
-            </div>
-            <div class="item">
-                <div class="featured_image wow fadeInDown"><a href="single.html"><img src="<?=get_stylesheet_directory_uri()?>/images/mehro.jpg"
-                                                                                      width="1920" height="1080"><span
-                                class="hover"></span></a></div>
-                <div class="post_text wow fadeInLeft"><a href="single.html" target="_blank"><h3 class="upper">Blog
-                            Title</h3></a>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                        of type and scrambled it to make a type specimen book.</p><a href="single.html" target="_blank">Read
-                        More</a></div>
-            </div>
+            <?php endforeach; ?>
 
         </div>
 
     </div>
 
     <div class="container ptb_50 text-center">
-        <button class="btn-mandy" id="loadmore">Load More</button>
+        <button class="btn-mandy" id="loadmore">查看更早的博客</button>
         <input type="hidden" value="2" class="counterea"></div>
 </div>
 
@@ -593,7 +557,7 @@
         </div>
         <div class="col-lg-9 wow fadeInRight">
             <form class="form" action="http://demo.themexlab.com/8x/parallax/sendemail.php" method="post">
-                <p class="lead show-on-success">Thanks for the mail, We will contact you shortly.</p>
+                <p class="lead show-on-success">谢谢您，我们将尽快与您取得联系。</p>
                 <input type="text" name="name" class="col-lg-4" placeholder="姓名"/>
                 <input type="text" name="email" class="col-lg-4" placeholder="邮箱"/>
                 <input type="text" name="subject" class="col-lg-4" placeholder="手机"/><br>
